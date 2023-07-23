@@ -1,0 +1,70 @@
+body {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-y: hidden;
+  font: 16px "Century Gothic", Futura, sans-serif;
+}
+
+.app {
+  width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.cell {
+  color: #000;
+  background: #fff;
+  border: 2px solid #999;
+  float: left;
+  font-size: 75px;
+  font-weight: bold;
+  line-height: 75px;
+  height: 90px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 90px;
+  cursor: pointer;
+}
+
+.cell:hover,
+.cell:focus {
+  outline: none;
+  background-color: #eee;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.game-info {
+  text-align: center;
+}
+
+.reset {
+  height: 50px;
+  width: 270px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #ccc;
+  background: #ddd;
+  cursor: pointer;
+}
+
+.winner {
+  color: #d00;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .game-info,
+  .reset button {
+    font-size: 24px;
+  }
+}
