@@ -8,7 +8,7 @@ const Info = ({ winner, onResetBoard, isPlayerOne, cells }) => {
   } else if (cells.indexOf(null) === -1)  {
     status = 'Click button to restart a new game.' ;
   } else {
-    status = `Next player: ' + ${isPlayerOne ? 'X' : 'O'}`;
+    status = `Next player: ${isPlayerOne ? 'X' : 'O'}`;
   }
 
   return (
