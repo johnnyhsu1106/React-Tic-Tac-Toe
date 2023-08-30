@@ -1,5 +1,9 @@
 ### Getting Started
-This is a To Do List built based on React.
+This is a Tic Tac Toe built based on React.
+
+App: https://react-tic-tac-toe-by-yh.web.app/
+
+
 
 Checkout this repo, install dependencies, then start the gulp process with the following:
 ```
