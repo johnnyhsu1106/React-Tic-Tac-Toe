@@ -1,12 +1,18 @@
-import Cell from './Cell'
+import Cell from './Cell';
+import { useTicTacToeContext } from '../contexts/TicTacToeContext';
 
-const Board = ({ winner, cells,  onClickCell }) => {
+
+const Board = () => {
+  const {
+    cells,
+    handleCellClick
+  } = useTicTacToeContext();
+
   const renderCell = (i) => {
     return (
       <Cell
-        winner={winner}
         value={cells[i]}
-        onClickCell={() => {onClickCell(i)}}
+        onClickCell={() => { handleCellClick(i) }}
       />
     ) 
   }

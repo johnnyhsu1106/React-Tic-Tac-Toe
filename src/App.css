@@ -8,7 +8,7 @@ body {
   font: 16px "Century Gothic", Futura, sans-serif;
 }
 
-.app {
+.container {
   width: 270px;
   margin-left: auto;
   margin-right: auto;
@@ -38,6 +38,10 @@ body {
   background-color: #eee;
 }
 
+.cell:disabled {
+  cursor: not-allowed;
+}
+
 .game {
   display: flex;
   flex-direction: row;
@@ -62,7 +66,6 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
-
   .game-info,
   .reset button {
     font-size: 24px;

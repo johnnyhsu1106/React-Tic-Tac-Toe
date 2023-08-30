@@ -1,4 +1,12 @@
-const Cell = ({ winner, value, onClickCell }) => {
+import { useTicTacToeContext } from '../contexts/TicTacToeContext';
+
+
+const Cell = ({ 
+  value, 
+  onClickCell 
+}) => {
+  const { winner } = useTicTacToeContext();
+
   return (
     <button
       disabled={winner || value ? true : false}
